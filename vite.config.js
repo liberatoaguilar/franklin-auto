@@ -19,7 +19,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/franklin-auto/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/franklin-auto/" : "/",
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
   resolve: {
     extensions: [
